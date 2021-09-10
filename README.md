@@ -144,3 +144,141 @@ Sum: 9
 ```
 
 ## Task 3
+
+#### Mathematical Operations
+Python
+```python
+first_value = 5
+second_value = 4
+
+sum = first_value + second_value
+difference = first_value - second_value
+product = first_value * second_value
+quotient = first_value / second_value
+modulus = first_value % second_value
+exponent = first_value ** second_value 
+
+print('Sum: ' + str(sum))
+print('Difference: ' + str(difference))
+print('Product: ' + str(product))
+print('Quotient: ' + str(quotient))
+print('Modulus: ' + str(modulus))
+print('Exponent: ' + str(exponent))
+```
+
+Output
+```output
+Sum: 9
+Difference: 1
+Product: 20
+Quotient: 1.25
+Modulus: 1
+Exponent: 625
+```
+
+#### Operators
+```+```	Addition operator. <br>
+```-```	Subtraction operator. <br>
+```*```	Multiplication operator. <br>
+```/```	Division operator. <br>
+```%```	Modulus operator, which gives you the remainder (if any) after you divide one value into another. It's useful to know whether one value is evenly divisible by the other.. <br>
+```**```Exponent operator. For example, "5 to the fourth power" is expressed as 5 * 5 * 5 * 5. <br>
+
+#### Order of operations - PEDMAS
+Parentheses: Resolve operations between parentheses first.<br>
+Exponents: Resolve exponents.<br>
+Multiplication: Perform multiplication, from left to right.<br>
+Division: Perform division, from left to right.<br>
+Addition: Perform addition, from left to right.<br>
+Subtraction: Perform subtraction, from left to right.<br>
+
+#### Mathematical Operations
+Python
+```python
+print(3 + 4 * 5)
+print((3 + 4) * 5)
+```
+
+Output
+```output
+23
+35
+```
+
+#### Integers become floats
+Python
+```python
+first_value = 5
+second_value = 4
+
+quotient = first_value / second_value
+
+print(type(quotient))
+print(quotient)
+```
+
+Output
+```output
+<class 'float'>
+1.25
+```
+
+#### Floats become Integers
+Python
+```python
+pi = 3.14
+print(type(pi))
+print(int(pi))
+
+uptime = 99.99
+print(type(uptime))
+print(int(uptime))
+```
+
+Output
+```output
+<class 'float'>
+3
+<class 'float'>
+99
+```
+
+#### Rounding numbers
+Python
+```python
+pi = 3.14
+print(type(pi))
+print(int(pi))
+print(round(pi))
+
+uptime = 99.99
+print(type(uptime))
+print(int(uptime))
+print(round(uptime))
+```
+
+Output
+```output
+<class 'float'>
+3
+3
+<class 'float'>
+99
+100
+```
+
+#### Rounding numbers to a decimal place
+Python
+```python
+first_value = round(7.654321, 2)
+print(first_value)
+
+second_value = round(9.87654, 3)
+print(second_value)
+```
+
+Output
+```output
+7.65
+9.877
+```
